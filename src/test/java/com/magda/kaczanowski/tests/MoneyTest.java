@@ -7,14 +7,6 @@ import static org.testng.Assert.*;
 
 public class MoneyTest {
 
-    @DataProvider
-    private static final Object [][] getMoney() {
-        return new Object[][] {
-                {10, "USD"},
-                {20, "PLN"}
-        };
-    }
-
 //    public void constructorShouldSetAmountAndCurrency() {
 //        Money money = new Money(10, "PLN");
 //
@@ -22,7 +14,7 @@ public class MoneyTest {
 //        assertEquals(money.getCurrency(), "PLN");
 //    }
 
-    @Test(dataProvider = "getMoney")
+    @Test(dataProvider = "getMoney", dataProviderClass = DataProviders.class)
     public void constructorShouldSetAmountAndCurrency(int amount, String currency) {
         Money money = new Money(amount, currency);
 
