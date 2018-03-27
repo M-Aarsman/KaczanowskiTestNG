@@ -8,7 +8,7 @@ import static org.testng.Assert.*;
 public class Chapter3ExOneTest {
 
     @DataProvider
-    private static final Object[][] StringsToReverse() {
+    private static Object[][] StringsToReverse() {
         return new Object[][] {
                 {"ala", "ala"},
                 {"kot", "tok"},
