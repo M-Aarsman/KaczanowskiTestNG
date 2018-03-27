@@ -1,4 +1,4 @@
-package com.magda.kaczanowski.tests;
+package com.magda.kaczanowski.chapter3;
 
 class Chapter3ExOne {
     static String reverse(String s) {

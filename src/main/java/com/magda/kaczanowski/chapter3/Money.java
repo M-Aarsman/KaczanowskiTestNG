@@ -1,4 +1,4 @@
-package com.magda.kaczanowski.tests;
+package com.magda.kaczanowski.chapter3;
 
 import java.util.Objects;
 
