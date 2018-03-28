@@ -1,11 +1,13 @@
 package com.magda.kaczanowski.chapter4;
 
-public class FootballTeam {
-    public FootballTeam(int gamesWonNumber) {
+class FootballTeam {
+    private final int gamesWon;
 
+    FootballTeam(int gamesWon) {
+        this.gamesWon = gamesWon;
     }
 
-    public int getGamesWon() {
-        return 0;
+    int getGamesWon() {
+        return gamesWon;
     }
 }
