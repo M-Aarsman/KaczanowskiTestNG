@@ -1,6 +1,6 @@
 package com.magda.kaczanowski.chapter4;
 
-class FootballTeam {
+class FootballTeam implements Comparable<FootballTeam> {
     private final int gamesWon;
 
     FootballTeam(int gamesWon) {
@@ -12,5 +12,10 @@ class FootballTeam {
 
     int getGamesWon() {
         return gamesWon;
+    }
+
+    @Override
+    public int compareTo(FootballTeam otherTeam) {
+        return gamesWon - otherTeam.getGamesWon();
     }
 }
